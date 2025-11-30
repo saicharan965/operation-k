@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>operation-k</title>
-    <style type="text/css">
-      body {
-        margin: 0;
-      }
-    </style>
-  </head>
 
-  <body>
-    <script src="./phaser.js"></script>
-    <script type="text/javascript">
-      let config = {
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>operation-k</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      /* dark background */
+      display: flex;
+      justify-content: center;
+      /* center horizontally */
+      align-items: center;
+      /* center vertically */
+      height: 100vh;
+      /* full height */
+    }
+
+    canvas {
+      display: block;
+      /* removes small inline spacing */
+    }
+  </style>
+</head>
+
+<body>
+  <script src="./phaser.js"></script>
+  <script type="text/javascript">
+    let config = {
         type: Phaser.AUTO,
         width: 800,
         height: 600,
@@ -191,6 +206,7 @@
 
         gameOver = true;
       }
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
